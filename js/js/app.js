@@ -150,7 +150,7 @@ class MyApp {
                         
                         2 
                         undefined `
-            }
+            },
             {
                 question: `Что такое hoisting или "поднятие переменных"? Что произойдет при выполнении следующего куска кода?
                             myname = "global"; 
@@ -462,10 +462,12 @@ class MyApp {
         ]
         this.questionPlace = document.getElementsByClassName('question')[0];
         this.answerPlace = document.getElementsByClassName('answer')[0];
+        this.amountQuestions = document.querySelector('.amount');
         this.nextButton = document.querySelector('.next-button');
         this.showAnswerButton = document.querySelector('.show-answer-button');
-        this.getRandomQuestion(this.questions);
 
+        this.getRandomQuestion(this.questions);
+        this.countAmountQuestions();
         this.index;
 
         this.showAnswerButton.onclick = () => this.onShowAnswerClick(this.index);
@@ -485,6 +487,9 @@ class MyApp {
     onShowAnswerClick(index) {
         this.answerPlace.innerHTML = this.questions[index].answer;
         this.answerPlace.style.display = 'flex'
+    }
+    countAmountQuestions() {
+        this.amountQuestions.innerHTML = `questions are: ${this.questions.length}`
     }
 }
 

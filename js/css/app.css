@@ -1,6 +1,11 @@
 .container {
     padding: 20px 20px;
 }
+.container .amount {
+    font-family: sans-serif;
+    font-size: 10px;
+    color: rgb(40, 133, 150);
+}
 .container h1 {
     font-size: 30px;
     font-family: sans-serif;
