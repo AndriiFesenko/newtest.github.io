@@ -1,0 +1,31 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 25px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+.container li {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: rgb(57, 195, 219);
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 25px;
+    color: black;
+    font-family: sans-serif;
+    margin: 10px 0px;
+    list-style: none;
+}
+.container li a {
+    text-decoration: none;
+    margin-left: 10px;
+}
